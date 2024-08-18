@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h1>Gold Calculator</h1>
+      <form action="" id="goldCalculator">
+        <div>
+          <label for="weightInGram"> ရွှေအလေးချိန် (ဂရမ်ဖြင့်) </label>
+          <input type="number" id="weightInGram" required />
+        </div>
+
+        <div>
+          <label for="salePrice"> ပစ္စည်းတန်ဖိုး (ကျပ်) </label>
+          <input type="number" id="salePrice" required />
+        </div>
+
+        <div>
+          <label for="currentPrice"> ဈေးကွက်ပေါက်ဈေး (ကျပ်) </label>
+          <input type="number" id="currentPrice" required />
+        </div>
+
+        <button type="button" onclick="go(event)">တွက်ရန်</button>
+      </form>
+
+      <div class="result-calculator">
+        <h2>ရလဒ်</h2>
+        <p>ရွှေအလေးချိန် <span id="localWeight"> ___ </span> ပဲ</p>
+        <p>ရွှေတန်ဖိုး <span id="actualGoldPrice"> ___ </span> ကျပ်</p>
+        <p>လက်ခ <span id="serviceCharge"> ___ </span> ကျပ်</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
